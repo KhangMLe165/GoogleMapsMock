@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps Mock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header with search bar -->
+        <div class="header">
+            <div class="search-bar">
+                <div class="search-icon">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <div class="search-input-container">
+                    <input type="text" placeholder="Search here">
+                    <div class="search-actions">
+                        <i class="fas fa-microphone"></i>
+                        <i class="fas fa-camera"></i>
+                        <div class="profile-icon">S</div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-tabs">
+                <div class="tab">
+                    <i class="fas fa-utensils"></i>
+                    <span>Restaurants</span>
+                </div>
+                <div class="tab">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </div>
+                <div class="tab">
+                    <i class="fas fa-gas-pump"></i>
+                    <span>Gas</span>
+                </div>
+                <div class="tab">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Groceries</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map container -->
+        <div class="map-container" id="map">
+            <!-- Map will be generated here -->
+        </div>
+
+        <!-- Bottom panel -->
+        <div class="bottom-panel">
+            <div class="panel-header">
+                <h2>Latest in the area</h2>
+                <div class="weather-info">
+                    <span class="temperature">18°</span>
+                    <span class="aqi">27 AQI</span>
+                </div>
+            </div>
+            <div class="panel-content">
+                <div class="list-item">
+                    <div class="item-image" style="background-image: url('images/local_gems.svg')"></div>
+                    <div class="item-info">
+                        <h3>Shaboozey's Local Gems</h3>
+                        <p>Updated 2 weeks ago</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="item-image" style="background-image: url('images/go_list.svg')"></div>
+                    <div class="item-info">
+                        <h3>Benson Boon's Go List</h3>
+                        <p>Updated 1 month ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation bar -->
+        <div class="nav-bar">
+            <div class="nav-item active">
+                <i class="fas fa-compass"></i>
+                <span>Explore</span>
+            </div>
+            <div class="nav-item">
+                <i class="far fa-bookmark"></i>
+                <span>You</span>
+            </div>
+            <div class="nav-item">
+                <i class="fas fa-plus-circle"></i>
+                <span>Contribute</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
