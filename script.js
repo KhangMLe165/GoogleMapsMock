@@ -35,7 +35,7 @@ function initMap() {
     const currentLocation = document.createElement('div');
     currentLocation.className = 'current-location';
     currentLocation.style.left = '50%';
-    currentLocation.style.top = '60%';
+    currentLocation.style.top = '50%';
     map.appendChild(currentLocation);
     
     // Add location markers
