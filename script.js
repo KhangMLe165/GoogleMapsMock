@@ -30,6 +30,7 @@ function initMap() {
     
     // Create fake map tiles
     createMapTiles();
+    createMapTierTiles();
     
     // Add current location marker
     const currentLocation = document.createElement('div');
